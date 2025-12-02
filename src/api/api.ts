@@ -1,7 +1,7 @@
 import type { GetTrackDetailsOutput, GetTrackListOutput } from "../types";
 
-const API_KEY = "c5979a0f-1886-4e63-9bc2-3546b075c045";
-const BASIC_URL = "https://musicfun.it-incubator.app/api/1.0";
+const BASIC_URL = import.meta.env.VITE_BASE_URL;
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 export const getAllTracks = async (): Promise<GetTrackListOutput> => {
   const response = await fetch(`${BASIC_URL}/playlists/tracks`, {
