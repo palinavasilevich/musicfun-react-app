@@ -1,6 +1,5 @@
 {
   "name": "react-musicfun-app",
-  "homepage": "https://palinavasilevich.github.io/musicfun-react-app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "clsx": "^2.1.1",
